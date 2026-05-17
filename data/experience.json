@@ -1,0 +1,90 @@
+{
+  "experiences": [
+    {
+      "period": "2025–Present",
+      "en": {
+        "company": "Tencent Hunyuan",
+        "role": "VLM Post-Training",
+        "awards": [],
+        "tags": [
+          "(Agentic)RL",
+          "Agent",
+          "VLM"
+        ]
+      },
+      "zh": {
+        "company": "腾讯·混元",
+        "role": "VLM 后训练",
+        "awards": [],
+        "tags": [
+          "(Agentic)RL",
+          "Agent",
+          "VLM"
+        ]
+      }
+    },
+    {
+      "period": "2023–2025",
+      "en": {
+        "company": "Xiaohongshu (hi lab)",
+        "role": "LLM Post-Training",
+        "awards": [],
+        "tags": [
+          "GenRM",
+          "RL",
+          "LLM"
+        ]
+      },
+      "zh": {
+        "company": "小红书·hi lab",
+        "role": "LLM 后训练",
+        "awards": [],
+        "tags": [
+          "GenRM",
+          "RL",
+          "LLM"
+        ]
+      }
+    },
+    {
+      "period": "2020–2023",
+      "en": {
+        "company": "Kuaishou (Keling)",
+        "role": "AI for Content Creation",
+        "awards": [],
+        "tags": [
+          "AIGC",
+          "Mobile-Intelligence"
+        ]
+      },
+      "zh": {
+        "company": "快手·可灵",
+        "role": "AI 驱动内容创作",
+        "awards": [],
+        "tags": [
+          "AIGC",
+          "Mobile-Intelligence"
+        ]
+      }
+    },
+    {
+      "period": "2018–2020",
+      "en": {
+        "company": "Tencent YouTu Lab",
+        "role": "AI for Maps & Autonomous Driving",
+        "awards": [],
+        "tags": [
+          "Autonomous Driving"
+        ]
+      },
+      "zh": {
+        "company": "腾讯·优图实验室",
+        "role": "AI 赋能地图与自动驾驶",
+        "awards": [],
+        "tags": [
+          "Autonomous Driving"
+        ]
+      }
+    }
+  ]
+}

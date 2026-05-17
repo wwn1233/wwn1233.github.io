@@ -1,0 +1,44 @@
+{
+  "sidebar": {
+    "name": "Weinong Wang",
+    "affiliation": "Tencent Hunyuan"
+  },
+  "nav": {
+    "about": "About",
+    "papers": "Papers",
+    "opensource": "Open Source",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "section": {
+    "about": "ABOUT",
+    "papers": "PUBLICATIONS",
+    "opensource": "OPEN SOURCE",
+    "experience": "EXPERIENCE",
+    "education": "EDUCATION",
+    "contact": "CONTACT"
+  },
+  "about": {
+    "bio": "I am a Senior Researcher at Tencent Hunyuan, focusing on post-training for vision-language models and frontier AGI capabilities. My work centers on reinforcement learning, reward modeling, and agentic learning, with a strong emphasis on GUI agents, vision-language reasoning, and real-world task solving. By bridging scalable post-training with deployment-oriented research, I aim to advance the frontier capabilities of generalist AI systems. Previously, I contributed to LLM alignment at Xiaohongshu, AIGC at Kuaishou, and autonomous driving at Tencent YouTu Lab."
+  },
+  "interest": {
+    "rl": "Reinforcement Learning",
+    "agent": "Agent",
+    "vlm": "Vision-Language Models",
+    "pt": "Post-Training",
+    "eval": "Evaluation"
+  },
+  "edu": {
+    "xjtu": "Xi'an Jiaotong University",
+    "ms": "M.S. in AI & Robotics",
+    "msrank": "Rank 1/110",
+    "bs": "B.S. in Automation",
+    "bsrank": "Rank 3/160",
+    "elite": "Automation Elite Class",
+    "casia": "XJTU & CASIA"
+  },
+  "opensource": {
+    "agentworlds": "A curated evidence map of resettable environments, verifiable rewards, trajectories, sandboxes, and post-training loops for LLM/VLM agents. Covers 8 domains from GUI to embodied worlds, with an interactive bilingual explorer."
+  }
+}

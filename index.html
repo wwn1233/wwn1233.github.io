@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Weinong Wang — RL / VLM / Agent researcher at Tencent Hunyuan." />
+  <title>Weinong Wang</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile Nav Toggle -->
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+
+  <!-- Overlay for mobile -->
+  <div class="overlay" id="overlay"></div>
+
+  <div class="layout">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-name" data-i18n="sidebar.name">Weinong Wang</div>
+      <div class="sidebar-tags">RL · Agent · VLM</div>
+      <div class="sidebar-affiliation" data-i18n="sidebar.affiliation">Tencent Hunyuan</div>
+
+      <div class="sidebar-accent"></div>
+
+      <!-- Navigation -->
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#about"      data-i18n="nav.about"      class="active">About</a></li>
+          <li><a href="#papers"     data-i18n="nav.papers"     >Papers</a></li>
+          <li><a href="#experience" data-i18n="nav.experience" >Experience</a></li>
+          <li><a href="#education"  data-i18n="nav.education"  >Education</a></li>
+          <li><a href="#contact"    data-i18n="nav.contact"    >Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social Links -->
+      <div class="sidebar-social">
+        <!-- Google Scholar -->
+        <a href="https://scholar.google.com/citations?user=F4b5oS4AAAAJ&hl=zh-CN" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.5V20h5v-6h7v6h5V9.5H24L12 0z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/wwn1233" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:weinong.wang@hotmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <polyline points="2,4 12,13 22,4"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Language Toggle -->
+      <div class="lang-toggle">
+        <button id="lang-en" class="active" onclick="switchLang('en')">EN</button>
+        <button id="lang-zh" onclick="switchLang('zh')">中</button>
+      </div>
+
+    </aside>
+    <!-- =================== END SIDEBAR =================== -->
+
+    <!-- ===================== CONTENT ===================== -->
+    <main class="content">
+
+      <!-- About -->
+      <section id="about" class="section">
+        <h2 class="section-title" data-i18n="section.about">ABOUT</h2>
+
+        <p class="bio" data-i18n="about.bio">
+          I am a Senior Researcher at Tencent Hunyuan, focusing on post-training for vision-language models and frontier AGI capabilities. My work centers on reinforcement learning, reward modeling, and agentic learning, with a strong emphasis on GUI agents, vision-language reasoning, and real-world task solving. By bridging scalable post-training with deployment-oriented research, I aim to advance the frontier capabilities of generalist AI systems. Previously, I contributed to LLM alignment at Xiaohongshu, AIGC at Kuaishou, and autonomous driving at Tencent YouTu Lab.
+        </p>
+
+        <!-- Interest Tags -->
+        <div class="interests">
+          <span class="interest-tag" data-i18n="interest.rl">Reinforcement Learning</span>
+          <span class="interest-tag" data-i18n="interest.agent">Agent</span>
+          <span class="interest-tag" data-i18n="interest.vlm">Vision-Language Models</span>
+          <span class="interest-tag" data-i18n="interest.pt">Post-Training</span>
+          <span class="interest-tag" data-i18n="interest.eval">Evaluation</span>
+        </div>
+      </section>
+
+      <!-- Papers -->
+      <section id="papers" class="section">
+        <h2 class="section-title" data-i18n="section.papers">PUBLICATIONS</h2>
+        <div id="papers-container"></div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="section-title" data-i18n="section.experience">EXPERIENCE</h2>
+        <div id="experience-container"></div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <h2 class="section-title" data-i18n="section.education">EDUCATION</h2>
+        <div class="edu-list">
+
+          <!-- MS -->
+          <div class="edu-item">
+            <div class="edu-period">2015–2018</div>
+            <div class="edu-body">
+              <div class="edu-school" data-i18n="edu.xjtu">Xi'an Jiaotong University</div>
+              <div class="edu-degree" data-i18n="edu.ms">M.S. in AI &amp; Robotics</div>
+              <div class="edu-note" data-i18n="edu.msrank">Rank 1/110</div>
+            </div>
+          </div>
+
+          <!-- BS -->
+          <div class="edu-item">
+            <div class="edu-period">2011–2015</div>
+            <div class="edu-body">
+              <div class="edu-school" data-i18n="edu.xjtu">Xi'an Jiaotong University</div>
+              <div class="edu-degree" data-i18n="edu.bs">B.S. in Automation</div>
+              <div class="edu-note" data-i18n="edu.bsrank">Rank 3/160</div>
+            </div>
+          </div>
+
+          <!-- Elite Class -->
+          <div class="edu-item">
+            <div class="edu-period">2014–2015</div>
+            <div class="edu-body">
+              <div class="edu-school" data-i18n="edu.elite">Automation Elite Class</div>
+              <div class="edu-degree" data-i18n="edu.casia">XJTU &amp; CASIA</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="section-title" data-i18n="section.contact">CONTACT</h2>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <!-- Email icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <polyline points="2,4 12,13 22,4"/>
+            </svg>
+            <a href="mailto:weinong.wang@hotmail.com">weinong.wang@hotmail.com</a>
+          </li>
+          <li class="contact-item">
+            <!-- Scholar icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;">
+              <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.5V20h5v-6h7v6h5V9.5H24L12 0z"/>
+            </svg>
+            <a href="https://scholar.google.com/citations?user=F4b5oS4AAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+          </li>
+          <li class="contact-item">
+            <!-- GitHub icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            <a href="https://github.com/wwn1233" target="_blank" rel="noopener">github.com/wwn1233</a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+    <!-- =================== END CONTENT =================== -->
+
+  </div><!-- /.layout -->
+
+  <script src="main.js"></script>
+</body>
+</html>

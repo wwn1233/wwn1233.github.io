@@ -1,0 +1,168 @@
+{
+  "categories": [
+    {
+      "id": "rl",
+      "label": "RL",
+      "papers": [
+        {
+          "title": "Uni-DPO: A Unified Paradigm for Dynamic Preference Optimization of LLMs",
+          "authors": "Shangpin Peng, <strong>Weinong Wang</strong>, Zitian Tian, Shuyu Yang, Xing Wu, Haotian Xu, Chang Zhang, Takashi Isobe, Baochang Hu, et al.",
+          "venue": "ICLR 2026",
+          "year": 2026,
+          "url": ""
+        },
+        {
+          "title": "Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe",
+          "authors": "Wei Hou, Shangpin Peng, <strong>Weinong Wang</strong>, Zhongchao Ruan, et al.",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.03677"
+        },
+        {
+          "title": "VideoTIR: Accurate Understanding for Long Videos with Efficient Tool-Integrated Reasoning",
+          "authors": "Zhe Gao, Shiyu Shen, Taifeng Chai, <strong>Weinong Wang</strong>, Haotian Xu, Wei Li, Quanfeng Fan, Yongliang Gao, Dacheng Tao",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2603.25021"
+        },
+        {
+          "title": "Agent RL Scaling Law: Agent RL with Spontaneous Code Execution for Mathematical Problem Solving",
+          "authors": "Xinji Mai, Haotian Xu, Xing Wu, <strong>Weinong Wang</strong>, Jiahao Hu, Yizhi Zhang, Wei Zhang",
+          "venue": "NeurIPS 2025",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2505.07773"
+        },
+        {
+          "title": "RedStar: Does Scaling Long-CoT Data Unlock Better Slow-Reasoning Systems?",
+          "authors": "Haotian Xu, Xing Wu, <strong>Weinong Wang</strong>, Zhongzhi Li, Da Zheng, Boyuan Chen, et al.",
+          "venue": "arXiv 2025",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2501.11284"
+        },
+        {
+          "title": "SedarEval: Automated Evaluation using Self-Adaptive Rubrics",
+          "authors": "Zhiyuan Fan, <strong>Weinong Wang</strong>, Dandan Zhang",
+          "venue": "EMNLP 2024",
+          "year": 2024,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "label": "VLM",
+      "papers": [
+        {
+          "title": "MMTIT-Bench: A Multilingual and Multi-Scenario Benchmark with Cognition-Perception-Reasoning Guided Text-Image Machine Translation",
+          "authors": "Guo Li, Chang Zhang, Yanfei Liang, Hao Shen, Yi Zhang, Pengyu Lyu, <strong>Weinong Wang</strong>, Xingyu Wan, Ge Zeng, et al.",
+          "venue": "CVPR 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2603.23896"
+        },
+        {
+          "title": "Enhancing MLLM Spatial Understanding via Active 3D Scene Exploration for Multi-Perspective Reasoning",
+          "authors": "Jixuan Chen, Qinghua Tang, <strong>Weinong Wang</strong>, Quanfeng Fan",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2604.06725"
+        },
+        {
+          "title": "Ego-InBetween: Generating Object State Transitions in Ego-Centric Videos",
+          "authors": "Mengqi Ge, Takashi Isobe, Xun Jia, Yingshuo Sun, Zihao Yang, <strong>Weinong Wang</strong>, et al.",
+          "venue": "CVPR 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2604.17749"
+        },
+        {
+          "title": "CF-VLA: Efficient Coarse-to-Fine Action Generation for Vision-Language-Action Policies",
+          "authors": "Fuqiang Du, Fengqi Yan, Jiayue Wu, Xiaoxia Xu, Weizhong Zhang, <strong>Weinong Wang</strong>, Ying Guo, Bozhao Qian, Zheng He",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2604.24622"
+        },
+        {
+          "title": "Hunyuan-OCR Technical Report",
+          "authors": "Hunyuan Vision Team incl. <strong>Weinong Wang</strong>, et al.",
+          "venue": "arXiv 2025",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.19575"
+        },
+        {
+          "title": "Exploring Implicit Visual Misunderstandings in Multimodal Large Language Models through Attention Analysis",
+          "authors": "Pengfei Wang, Guohai Xu, <strong>Weinong Wang</strong>, Jian Yang, Jialou Lou, Yingxue Xu",
+          "venue": "arXiv 2025",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2505.10541"
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "label": "Agent",
+      "papers": [
+        {
+          "title": "Safe, or Simply Incapable? Rethinking Safety Evaluation for Phone-Use Agents",
+          "authors": "Zheqi Tang, Yonghe Zhang, Chaoyu Li, Xinglong Lai, Pengyu Lyu, Ying Guo, <strong>Weinong Wang</strong>, Jian Li, et al.",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07630"
+        },
+        {
+          "title": "Awesome-Agent-Worlds",
+          "authors": "<strong>Weinong Wang</strong>",
+          "venue": "Open Source",
+          "year": 2026,
+          "url": "https://github.com/wwn1233/Awesome-Agent-Worlds"
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "label": "Others",
+      "papers": [
+        {
+          "title": "LiteLong: Resource-Efficient Long-Context Data Synthesis for LLMs",
+          "authors": "Jiangtao Jia, Xing Wu, Chenfei Gao, incl. <strong>Weinong Wang</strong>, et al.",
+          "venue": "AAAI 2025",
+          "year": 2025,
+          "url": ""
+        },
+        {
+          "title": "Feature Decoupling-Recycling Network for Fast Interactive Segmentation",
+          "authors": "Huimin Zeng, <strong>Weinong Wang</strong>, Xin Tao, Zhibo Xiong, Yu-Wing Tai, Wei Pei",
+          "venue": "ACM MM 2023",
+          "year": 2023,
+          "url": ""
+        },
+        {
+          "title": "Few-shot Model Adaptation for Customized Facial Landmark Detection, Segmentation, Stylization and Shadow Removal",
+          "authors": "Zhen Wei, Bingkun Liu, <strong>Weinong Wang</strong>, Yu-Wing Tai",
+          "venue": "arXiv 2021",
+          "year": 2021,
+          "url": "https://arxiv.org/abs/2104.09457"
+        },
+        {
+          "title": "Push for Center Learning via Orthogonalization and Subspace Masking for Person Re-Identification",
+          "authors": "<strong>Weinong Wang</strong>, Wei Pei, Qian Cao, Shengjie Liu, Guodong Lu, Yu-Wing Tai",
+          "venue": "IEEE TIP 2021",
+          "year": 2021,
+          "url": ""
+        },
+        {
+          "title": "A Lightweight Discriminative Tracker based on Classification and Similarity",
+          "authors": "<strong>Weinong Wang</strong>, Fang Wang, Yong Guo",
+          "venue": "DICTA 2017",
+          "year": 2017,
+          "url": ""
+        },
+        {
+          "title": "A Monovision-based 3D Pose Estimation System for Vehicle Behavior Prediction",
+          "authors": "<strong>Weinong Wang</strong>, Fang Wang, Pei Liu, Yong He, Xin Zhang",
+          "venue": "IEEE ICVES 2016",
+          "year": 2016,
+          "url": ""
+        }
+      ]
+    }
+  ]
+}
