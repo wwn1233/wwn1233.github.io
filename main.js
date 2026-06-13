@@ -18,15 +18,16 @@ function renderPaperCard(paper) {
   const authorsHtml = paper.authors
     ? paper.authors.replace(/<strong>(.*?)<\/strong>/g, '<strong class="me">$1</strong>')
     : '';
+  const metaHtml = [
+    paper.venue ? `<span class="paper-venue">${paper.venue}</span>` : '',
+    paper.year ? `<span class="paper-year">${paper.year}</span>` : '',
+  ].join('');
 
   return `
     <div class="paper-card">
       <div class="paper-title">${titleHtml}</div>
       ${authorsHtml ? `<div class="paper-authors">${authorsHtml}</div>` : ''}
-      <div class="paper-meta">
-        <span class="paper-venue">${paper.venue}</span>
-        <span class="paper-year">${paper.year}</span>
-      </div>
+      ${metaHtml ? `<div class="paper-meta">${metaHtml}</div>` : ''}
     </div>`;
 }
 
