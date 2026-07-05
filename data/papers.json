@@ -21,7 +21,7 @@
         {
           "title": "VideoTIR: Accurate Understanding for Long Videos with Efficient Tool-Integrated Reasoning",
           "authors": "Zhe Gao, Shiyu Shen, Taifeng Chai, <strong>Weinong Wang</strong>, Haotian Xu, Xing W, Wenbin Li, Qi Fan, Yang Gao, Dacheng Tao",
-          "venue": "arXiv 2026",
+          "venue": "ECCV 2026",
           "year": 2026,
           "url": "https://arxiv.org/abs/2603.25021"
         },
@@ -52,6 +52,13 @@
       "id": "vlm",
       "label": "VLM",
       "papers": [
+        {
+          "title": "StrucTab: A Structured Optimization Framework for Table Parsing",
+          "authors": "Gengluo Li, Shangpin Peng, Chengquan Zhang, Binghong Wu, Hao Feng, <strong>Weinong Wang</strong>, Pengyuan Lyu, Huawen Shen, Xingyu Wan, Zhuotao Tian, Han Hu, Can Ma, Yu Zhou",
+          "venue": "ECCV 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2606.29905"
+        },
         {
           "title": "ChartArena: Benchmarking Chart Parsing across Languages, Scenarios, and Formats",
           "authors": "Shangpin Peng, Gengluo Li, Xingyu Wan, Chengquan Zhang, Hao Feng, Binghong Wu, Huawen Shen, <strong>Weinong Wang</strong>, Ziyi Cai, et al.",
@@ -107,6 +114,20 @@
       "id": "agent",
       "label": "Agent",
       "papers": [
+        {
+          "title": "PhoneBuddy: Training Open Models for Agentic Phone Use",
+          "authors": "Zhengyang Tang, Xin Lai, Pengyuan Lyu, Xinyuan Wang, Tianyi Bai, Chenxin Li, Yiduo Guo, Huawen Shen, Yuxuan Liu, Junyi Li, Zhengyao Fang, Yang Ding, Yi Zhang, <strong>Weinong Wang</strong>, Xingran Zhou, Liang Wu, Fei Tang, et al.",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2606.23049"
+        },
+        {
+          "title": "PhoneHarness: Harnessing Phone-Use Agents through Mixed GUI, CLI, and Tool Actions",
+          "authors": "Chenxin Li, Zhengyao Fang, Zhengyang Tang, Pengyuan Lyu, Xingran Zhou, Xin Lai, Fei Tang, Liang Wu, Yiduo Guo, <strong>Weinong Wang</strong>, Junyi Li, Yi Zhang, Yang Ding, Huawen Shen, et al.",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2606.14832"
+        },
         {
           "title": "PhoneHarness: A Mixed-Action Orchestration Harness and Benchmark for Phone Agents across CLI, GUI, and MCP Tools",
           "authors": "Xingran Zhou, Xin Lai, Fei Tang, Liang Wu, Yiduo Guo, <strong>Weinong Wang</strong>, Junyi Li, Yi Zhang, Yang Ding, et al.",
