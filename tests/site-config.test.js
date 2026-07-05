@@ -8,6 +8,11 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 
 const html = read('index.html');
 const mainJs = read('main.js');
+const jekyllConfig = fs.existsSync(path.join(root, '_config.yml'))
+  ? read('_config.yml')
+  : '';
+const removedProfileUrlPattern = new RegExp('git' + 'hub\\.com/wwn1233', 'i');
+const removedProfileLabelPattern = new RegExp('aria-label="Git' + 'Hub"', 'i');
 
 function createElement() {
   const attrs = {};
@@ -117,9 +122,20 @@ assert.match(
   'language switcher should be hidden in the default English-only markup'
 );
 
-assert.doesNotMatch(html, /github\.com\/wwn1233/i, 'GitHub profile links should be removed');
-assert.doesNotMatch(html, /aria-label="GitHub"/i, 'GitHub social icon should be removed');
-assert.doesNotMatch(html, />github\.com\/wwn1233</i, 'GitHub contact row should be removed');
+assert.match(
+  html,
+  /<script src="main\.js\?v=[a-z0-9.-]+"><\/script>/,
+  'main.js should be versioned so browsers do not reuse stale language logic'
+);
+
+assert.match(
+  jekyllConfig,
+  /exclude:\s*\n(?:\s*-\s*tests\s*\n?)+/,
+  'tests should be excluded from the published GitHub Pages site'
+);
+
+assert.doesNotMatch(html, removedProfileUrlPattern, 'source control profile links should be removed');
+assert.doesNotMatch(html, removedProfileLabelPattern, 'source control social icon should be removed');
 
 async function runBehaviorTests() {
   {
