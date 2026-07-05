@@ -3,6 +3,41 @@
    ============================================================ */
 
 /* ----------------------------------------------------------
+   0. Site Configuration
+   ---------------------------------------------------------- */
+
+// Set to 'en' for English-only, 'zh' for Chinese-only, or 'both' for the language switcher.
+const SITE_LANGUAGE_MODE = 'en';
+const SUPPORTED_LANGUAGE_MODES = ['en', 'zh', 'both'];
+
+function resolveLanguageMode() {
+  return SUPPORTED_LANGUAGE_MODES.includes(SITE_LANGUAGE_MODE)
+    ? SITE_LANGUAGE_MODE
+    : 'en';
+}
+
+function normalizeLang(lang) {
+  return lang === 'zh' ? 'zh' : 'en';
+}
+
+function updateLanguageToggle(lang) {
+  const mode = resolveLanguageMode();
+  const langToggle = document.querySelector('.lang-toggle');
+  const showToggle = mode === 'both';
+
+  if (langToggle) {
+    langToggle.hidden = !showToggle;
+    langToggle.setAttribute('aria-hidden', showToggle ? 'false' : 'true');
+  }
+
+  const enButton = document.getElementById('lang-en');
+  const zhButton = document.getElementById('lang-zh');
+
+  if (enButton) enButton.classList.toggle('active', lang === 'en');
+  if (zhButton) zhButton.classList.toggle('active', lang === 'zh');
+}
+
+/* ----------------------------------------------------------
    1. Papers Renderer
    ---------------------------------------------------------- */
 
@@ -153,27 +188,36 @@ function applyI18n(bundle) {
  * Switch the UI language, re-render dynamic sections, and persist preference.
  */
 async function switchLang(lang) {
-  document.documentElement.lang = lang;
+  const mode = resolveLanguageMode();
+  const nextLang = mode === 'both' ? normalizeLang(lang) : mode;
 
-  // Update toggle buttons
-  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-  document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+  document.documentElement.lang = nextLang;
+  updateLanguageToggle(nextLang);
 
   // Load and apply translations
-  const bundle = await loadI18n(lang);
+  const bundle = await loadI18n(nextLang);
   applyI18n(bundle);
 
   // Re-render dynamic content in the new language
   await renderExperience();
 
-  // Persist
-  try { localStorage.setItem('lang', lang); } catch (_) {}
+  // Persist only when the public language switcher is enabled.
+  try {
+    if (mode === 'both') {
+      localStorage.setItem('lang', nextLang);
+    } else {
+      localStorage.removeItem('lang');
+    }
+  } catch (_) {}
 }
 
 /**
  * Initialise the lang toggle from stored preference or browser lang.
  */
 function initLangToggle() {
+  const mode = resolveLanguageMode();
+  if (mode !== 'both') return mode;
+
   let lang = 'en';
   try {
     const stored = localStorage.getItem('lang');
@@ -246,10 +290,7 @@ function initScrollSpy() {
 async function init() {
   const lang = initLangToggle();
   document.documentElement.lang = lang;
-
-  // Update toggle button state immediately
-  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-  document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+  updateLanguageToggle(lang);
 
   // Load translations (for non-default lang or always to populate dynamic keys)
   const bundle = await loadI18n(lang);

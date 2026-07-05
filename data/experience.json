@@ -4,7 +4,7 @@
       "period": "2025–Present",
       "en": {
         "company": "Tencent Hunyuan",
-        "role": "VLM Post-Training",
+        "role": "Post-Training",
         "awards": [],
         "tags": [
           "(Agentic)RL",
@@ -14,7 +14,7 @@
       },
       "zh": {
         "company": "腾讯·混元",
-        "role": "VLM 后训练",
+        "role": "后训练",
         "awards": [],
         "tags": [
           "(Agentic)RL",
