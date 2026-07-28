@@ -53,6 +53,13 @@
       "label": "VLM",
       "papers": [
         {
+          "title": "HunyuanOCR-1.5: Making Lightweight OCR VLMs Faster and Better",
+          "authors": "Gengluo Li, Xingyu Wan, Shangpin Peng, <strong>Weinong Wang</strong>, Hao Feng, Yongkun Du, Binghong Wu, Zheng Ruan, Zhiqiong Lu, Liang Wu, Pengyuan Lyu, Huawen Shen, et al.",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2607.04884"
+        },
+        {
           "title": "StrucTab: A Structured Optimization Framework for Table Parsing",
           "authors": "Gengluo Li, Shangpin Peng, Chengquan Zhang, Binghong Wu, Hao Feng, <strong>Weinong Wang</strong>, Pengyuan Lyu, Huawen Shen, Xingyu Wan, Zhuotao Tian, Han Hu, Can Ma, Yu Zhou",
           "venue": "ECCV 2026",
@@ -114,6 +121,13 @@
       "id": "agent",
       "label": "Agent",
       "papers": [
+        {
+          "title": "HyMobileAgent: Data-Environment Co-Scaling for Efficient GUI Agents",
+          "authors": "Hy Vision Team, Huawen Shen, Zhengyang Tang, Shangpin Peng, Liang Wu, Anran Zhang, <strong>Weinong Wang</strong>, Yiduo Guo, Chenxin Li, Zhengyao Fang, et al.",
+          "venue": "arXiv 2026",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2607.14548"
+        },
         {
           "title": "PhoneBuddy: Training Open Models for Agentic Phone Use",
           "authors": "Zhengyang Tang, Xin Lai, Pengyuan Lyu, Xinyuan Wang, Tianyi Bai, Chenxin Li, Yiduo Guo, Huawen Shen, Yuxuan Liu, Junyi Li, Zhengyao Fang, Yang Ding, Yi Zhang, <strong>Weinong Wang</strong>, Xingran Zhou, Liang Wu, Fei Tang, et al.",
